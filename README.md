@@ -47,3 +47,12 @@ involved in the community and keep them in the specfem3d github wiki:
 
 SPECFEM3D is part of the software that is hosted by the Computational Infrastructure for Geodynamics (CIG). It is available on the CIG website [here (SPECFEM3D)](https://geodynamics.org/resources/specfem3dcartesian).
 
+___
+
+### Do not modify configure script
+
+Never modify the "configure" script directly, it is better to modify the "configure.ac" file and then generate the "configure" script by typing:
+
+```
+autoreconf -i
+```
